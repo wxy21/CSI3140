@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Circle</title>
+    <script>
+        function start() {
+            var btn = document.getElementById("calculateBtn");
+            btn.addEventListener("click", getArea, false);
+        }
+
+        function getArea() {
+            var numField = document.getElementById("number");
+            var input = parseFloat(numField.value);
+            var result = document.getElementById("result");
+            result.innerHTML = "Circle Area = " + circleArea(input);
+        }
+
+        function circleArea(radius) {
+            return Math.PI * radius * radius;
+        }
+
+        window.addEventListener("load", start, false);
+    </script>
+</head>
+<body>
+    <form action="#">
+        <p>
+            <label>
+                Enter radius: <input id="number" type="number">
+            </label>
+            <input id="calculateBtn" type="button" value="Calculate">
+        </p>
+    </form>
+
+    <p id="result"></p>
+</body>
+</html>

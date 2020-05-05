@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function start() {
+            var btn = document.getElementById("calBtn");
+            btn.addEventListener("click", getDistance, false);
+        }
+        
+        function getDistance() {
+            var x1 =document.getElementById("x1").value;
+            var y1 =document.getElementById("x2").value;
+            var x2 =document.getElementById("y1").value;
+            var y2 =document.getElementById("y2").value;
+            var result = document.getElementById("result");
+            result.innerHTML = "Distance: " + distance(x1, y1, x2, y2);
+        }
+
+        function distance(x1, y1, x2, y2) {
+            return Math.sqrt(Math.pow(x1-x2, 2) + Math.pow(y1-y2, 2));
+        }
+
+        window.addEventListener("load", start, false);
+    </script>
+</head>
+<body>
+    <form action="#">
+        <p>
+            <label>Enter x1: <input id="x1" type="number"></label>
+        </p>
+        <p>
+            <label>Enter y1: <input id="y1" type="number"></label>
+        </p>
+        <p>
+            <label>Enter x2: <input id="x2" type="number"></label>
+        </p>
+        <p>
+            <label>Enter y2: <input id="y2" type="number"></label>
+        </p>
+        <p><input id="calBtn" type="button" value="Calculate"></p>
+    </form>
+
+    <p id="result"></p>
+</body>
+</html>

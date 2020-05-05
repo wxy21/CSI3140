@@ -1,0 +1,19 @@
+nav{
+    border: 1px dotted black;
+    background-color: darkblue;
+    color: white;
+    width: 10em;
+}
+
+nav div{
+    display: none;
+    background-color: lightblue;
+}
+nav:hover div{
+    display: block;
+}
+
+nav div:hover{
+    background-color: lavender;
+    color: black;
+}

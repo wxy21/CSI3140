@@ -1,0 +1,31 @@
+div{
+    width: 100px;
+    height: 100px;
+}
+
+#d1{
+    border: 3px solid black;
+    border-radius: 10px;
+    background-color: lightblue;
+    font-weight: bold;
+}
+
+#d2{
+    border: 3px solid black;
+    border-radius: 50px;
+    background-color: lavender;
+    font-weight: bold;
+}
+
+#d3{
+    border: 3px solid black;
+    border-radius: 100px;
+    background-color: antiquewhite;
+    font-weight: bold;
+}
+
+#d4{
+    width: 500px;
+    height: 500px;
+    background: linear-gradient(45deg, Red, Orange, Yellow, Green, Blue, Indigo, Violet);
+}

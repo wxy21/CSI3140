@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        p{margin: 0;}
+    </style>
+</head>
+<body>
+    <?php
+        $fruits = array("apple", "orange", "banana");
+
+        for($i = 0; $i < count($fruits); ++$i){
+            if( strcmp( $fruits[$i], "banana") < 0)
+                print "<p>";
+                print $fruits[$i];
+                print " is less than banana ";
+            elseif(strcmp($fruits[$i], "banana") > 0)
+                print "<p>".$fruits[$i]." is greater than banana ";
+            else
+                print "<p>".$fruits[$i]." is equal to banana ";
+        }
+        print("</p>");
+    ?><!-- end PHP script -->
+</body>
+</html>

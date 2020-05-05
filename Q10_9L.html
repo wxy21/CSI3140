@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var t = [[1, 2, 3],[3, 4, 5],[5, 6, 7]];
+
+
+        document.writeln("<table border = ‘1’>");
+        document.writeln("<colgroup><col span='4' align='center' width='100'></colgroup>");
+        document.writeln("<tr><td>&nbsp</td>" +
+            "<th>0</th>" +
+            "<th>1</th>" +
+            "<th>2</th></tr>");
+
+        for(var i in t){
+            document.writeln("<tr><th>" + i + "</th></tr>");
+            for(j in t[i]){
+                document.writeln("<td>" + t[i][j] + "</td>");
+            }
+            document.writeln("</tr>");
+        }
+        document.writeln("</table>");
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
